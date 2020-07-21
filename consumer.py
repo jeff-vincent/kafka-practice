@@ -10,7 +10,7 @@ consumer = KafkaConsumer(
      group_id='my-group',
      value_deserializer=lambda x: loads(x.decode('utf-8')))
 
-MONGO_URI = 'mongodb+srv://jeff:AsspWord@cluster0-qnmim.mongodb.net/media?retryWrites=true&w=majority'
+MONGO_URI = ''
 
 client = MongoClient(MONGO_URI)
 collection = client.db.media
